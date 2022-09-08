@@ -40,7 +40,7 @@ const query = (person) => (
 
 console.dir(data);
 
-data.forEach((person) => {
+data.forEach((person) => {      // Привязка каждого элемента к классу Person
   Object.setPrototypeOf(person, Person.prototype);
   // person.__proto__ = Person.prototype
 });

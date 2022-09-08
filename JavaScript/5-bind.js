@@ -10,7 +10,7 @@ function toString() {
 }
 
 const p1 = { x: 10, y: 20 };
-const p1move = move.bind(p1);
+const p1move = move.bind(p1);                   // Стандартный метод bind связывает функции с объектом
 const p1toString = toString.bind(p1);
 p1move(-5, 10);
 

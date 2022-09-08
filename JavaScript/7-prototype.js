@@ -1,5 +1,7 @@
 'use strict';
 
+// Логгер с помощью прототипирования
+
 function Logger(kind) {
   this.color = Logger.colors[kind] || Logger.colors.info;
 }
@@ -10,7 +12,7 @@ Logger.colors = {
   info: '\x1b[1;37m',
 };
 
-Logger.prototype.log = function(s) {
+Logger.prototype.log = function (s) {
   const date = new Date().toISOString();
   console.log(this.color + date + '\t' + s);
 };

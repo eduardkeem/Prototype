@@ -1,5 +1,7 @@
 'use strict';
 
+// Логгер через класс
+
 class Logger {
   constructor(kind) {
     this.color = Logger.colors[kind] || Logger.colors.info;

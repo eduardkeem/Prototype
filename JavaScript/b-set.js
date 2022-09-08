@@ -7,7 +7,7 @@ class Rect {
 }
 
 const p1 = { x: 10, y: 20, width: 50, height: 50 };
-Object.setPrototypeOf(p1, Rect.prototype);
+Object.setPrototypeOf(p1, Rect.prototype); // равносильная надпись (поле) снизу
 //p1.__proto__ = Rect.prototype;
 
 console.log(p1);
